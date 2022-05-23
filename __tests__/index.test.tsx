@@ -1,14 +1,9 @@
-import { render, screen } from '@testing-library/react'
-import Home from '@/pages/index'
 
-describe('Home', () => {
-  it('renders a heading', () => {
-    render(<Home />)
+import { render, screen } from '@testing-library/react';
+import Home from '../pages';
 
-    const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
-    })
-
-    expect(heading).toBeInTheDocument()
+describe('index page', () => {
+  it('render correctly', () => {
+    render(<Home items={[]}/>);
   })
-})
+});
