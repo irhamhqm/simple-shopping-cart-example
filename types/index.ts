@@ -9,11 +9,7 @@ interface item {
   availableQuantity: number
 }
 
-interface itemInCart extends item {
-  inCart?: number
-}
 
 export type {
-  item,
-  itemInCart
+  item
 };

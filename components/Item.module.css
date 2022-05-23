@@ -1,0 +1,25 @@
+.container {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  padding: .5rem;
+  max-width: 140px;
+  height: 250px;
+  margin-bottom: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: 110px;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inputQty {
+  width: 43px;
+}
