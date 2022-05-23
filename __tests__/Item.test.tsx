@@ -1,5 +1,6 @@
 
 import Item from '@/components/Item';
+import { Provider } from 'react-redux';
 import { screen, render } from '@testing-library/react';
 
 const mockData = {
@@ -13,9 +14,17 @@ const mockData = {
   "availableQuantity": 100
 }
 
+import store from '../redux/store';
+
+const MockComponent = (props: { children: React.ReactNode }) => (
+  <Provider store={store}>
+    {props.children}
+  </Provider>
+);
+
 describe('Item component', () => {
   it('render correctly', () => {
-    const el = render(<Item data={mockData} />);
+    const el = render(<MockComponent><Item data={mockData} /></MockComponent>);
 
     expect(el).toMatchSnapshot();
   })

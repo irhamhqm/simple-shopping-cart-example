@@ -5,11 +5,12 @@ import styles from './Item.module.css';
 import { item } from "types"
 import { ChangeEvent, ChangeEventHandler, SyntheticEvent, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem, decreaseItem, selectCart, setItemQty } from "redux/main";
+import { addItem, decreaseItem, selectCart, setItemQty } from "../redux/main";
 
 type ItemProps = {
   data: item
 }
+
 
 export default function Item({ data }: ItemProps) {
   const dispatch = useDispatch();

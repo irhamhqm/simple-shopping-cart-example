@@ -26,13 +26,31 @@ Object {
           </span>
         </div>
         <div
-          class="info"
+          class="main"
         >
-          <div>
+          <div
+            class="name"
+          >
             orange
           </div>
-          <div>
+          <div
+            class="qty"
+          >
             100
+          </div>
+          <div
+            class="price"
+          >
+            10000
+          </div>
+          <div
+            class="control"
+          >
+            <button
+              class="btnAdd"
+            >
+              +
+            </button>
           </div>
         </div>
       </div>
@@ -60,13 +78,31 @@ Object {
         </span>
       </div>
       <div
-        class="info"
+        class="main"
       >
-        <div>
+        <div
+          class="name"
+        >
           orange
         </div>
-        <div>
+        <div
+          class="qty"
+        >
           100
+        </div>
+        <div
+          class="price"
+        >
+          10000
+        </div>
+        <div
+          class="control"
+        >
+          <button
+            class="btnAdd"
+          >
+            +
+          </button>
         </div>
       </div>
     </div>
