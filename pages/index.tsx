@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import axios from 'axios';
 
 import styles from './index.module.css';
@@ -8,6 +7,7 @@ import { GetStaticProps, NextPage } from 'next';
 import Item from '@/components/Item';
 import { useSelector } from 'react-redux';
 import { selectCart } from '../redux/main';
+import { formatToIDR } from 'utils';
 
 type indexProps = {
   items: Array<item>,
@@ -35,12 +35,14 @@ export default function Home({ items }: indexProps) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {items.map((data) => (
-        <Item key={data.uid} data={data} />
-      ))}
+      <div className={styles.main}>
+        {items.map((data) => (
+          <Item key={data.uid} data={data} />
+        ))}
+      </div>
      
-     <footer style={{ position: 'fixed', bottom: 0 }}>
-       Total: {calcTotal()}
+     <footer className={styles.footer}>
+       Total: {formatToIDR(calcTotal())}
      </footer>
     </div>
   )

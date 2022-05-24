@@ -6,6 +6,8 @@
   max-width: 140px;
   height: 250px;
   margin-bottom: 1rem;
+  /* grid-area: 1 / 1 / 4 / 3; */
+  justify-self: center;
 }
 
 .image {
@@ -18,7 +20,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
+  line-height: 1.4rem;
 }
+
+.name {}
+
+.qty {}
+
+.price {}
 
 .inputQty {
   width: 43px;
