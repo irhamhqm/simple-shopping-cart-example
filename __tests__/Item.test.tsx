@@ -19,13 +19,6 @@ const preloadedState = {
   cart: {}
 }
 
-
-// const MockComponent = (props: { children: React.ReactNode }) => (
-//   <Provider store={store}>
-//     {props.children}
-//   </Provider>
-// );
-
 describe('Item component', () => {
   it('add to cart button on click: add to cart button disappear and item added to cart', () => {
     render(<Item data={mockData} />, { preloadedState });
