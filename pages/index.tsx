@@ -4,7 +4,7 @@ import axios from 'axios';
 import styles from './index.module.css';
 import { item } from '../types';
 import { GetStaticProps, NextPage } from 'next';
-import Item from '@/components/Item';
+import Item from '../components/Item';
 import { useSelector } from 'react-redux';
 import { selectCart } from '../redux/main';
 import { formatToIDR } from 'utils';
@@ -35,6 +35,7 @@ export default function Home({ items }: indexProps) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <nav className={styles.navbar}>Home</nav>
       <div className={styles.main}>
         {items.map((data) => (
           <Item key={data.uid} data={data} />

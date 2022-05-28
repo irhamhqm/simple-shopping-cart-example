@@ -2,10 +2,10 @@ import Image from "next/image"
 
 import styles from './Item.module.css';
 
-import { item } from "types"
+import { item } from "../../types"
 import { ChangeEvent, ChangeEventHandler, SyntheticEvent, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem, decreaseItem, selectCart, setItemQty } from "../redux/main";
+import { addItem, decreaseItem, selectCart, setItemQty } from "../../redux/main";
 import { formatToIDR } from "utils";
 
 type ItemProps = {
