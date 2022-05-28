@@ -1,0 +1,737 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot render home correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <nav
+          class="navbar"
+        >
+          Home
+        </nav>
+        <div
+          class="main"
+        >
+          <div
+            class="container"
+          >
+            <div
+              class="image"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="Orange"
+                  data-nimg="fill"
+                  decoding="async"
+                  sizes="100vw"
+                  src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=3840&q=75"
+                  srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=3840&q=75 3840w"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+              </span>
+            </div>
+            <div
+              class="main"
+            >
+              <div
+                class="name"
+              >
+                orange
+              </div>
+              <div
+                class="qty"
+              >
+                100
+                 qty
+              </div>
+              <div
+                class="price"
+              >
+                Rp 10.000,00
+              </div>
+              <div
+                class="control"
+              >
+                <button>
+                  add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="container"
+          >
+            <div
+              class="image"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="Juice"
+                  data-nimg="fill"
+                  decoding="async"
+                  sizes="100vw"
+                  src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=3840&q=75"
+                  srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=3840&q=75 3840w"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+              </span>
+            </div>
+            <div
+              class="main"
+            >
+              <div
+                class="name"
+              >
+                Juice
+              </div>
+              <div
+                class="qty"
+              >
+                100
+                 qty
+              </div>
+              <div
+                class="price"
+              >
+                Rp 15.000,00
+              </div>
+              <div
+                class="control"
+              >
+                <button>
+                  add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="container"
+          >
+            <div
+              class="image"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="Strawberry"
+                  data-nimg="fill"
+                  decoding="async"
+                  sizes="100vw"
+                  src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=3840&q=75"
+                  srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=3840&q=75 3840w"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+              </span>
+            </div>
+            <div
+              class="main"
+            >
+              <div
+                class="name"
+              >
+                Strawberry
+              </div>
+              <div
+                class="qty"
+              >
+                100
+                 qty
+              </div>
+              <div
+                class="price"
+              >
+                Rp 20.000,00
+              </div>
+              <div
+                class="control"
+              >
+                <button>
+                  add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="container"
+          >
+            <div
+              class="image"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="Mango"
+                  data-nimg="fill"
+                  decoding="async"
+                  sizes="100vw"
+                  src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=3840&q=75"
+                  srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=3840&q=75 3840w"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+              </span>
+            </div>
+            <div
+              class="main"
+            >
+              <div
+                class="name"
+              >
+                Mango
+              </div>
+              <div
+                class="qty"
+              >
+                100
+                 qty
+              </div>
+              <div
+                class="price"
+              >
+                Rp 15.000,00
+              </div>
+              <div
+                class="control"
+              >
+                <button>
+                  add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="container"
+          >
+            <div
+              class="image"
+            >
+              <span
+                style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+              >
+                <img
+                  alt="Apple"
+                  data-nimg="fill"
+                  decoding="async"
+                  sizes="100vw"
+                  src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=3840&q=75"
+                  srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=3840&q=75 3840w"
+                  style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+                />
+              </span>
+            </div>
+            <div
+              class="main"
+            >
+              <div
+                class="name"
+              >
+                Apple
+              </div>
+              <div
+                class="qty"
+              >
+                100
+                 qty
+              </div>
+              <div
+                class="price"
+              >
+                Rp 10.000,00
+              </div>
+              <div
+                class="control"
+              >
+                <button>
+                  add to cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer
+          class="footer"
+        >
+          Total: 
+          0
+        </footer>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <nav
+        class="navbar"
+      >
+        Home
+      </nav>
+      <div
+        class="main"
+      >
+        <div
+          class="container"
+        >
+          <div
+            class="image"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Orange"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="main"
+          >
+            <div
+              class="name"
+            >
+              orange
+            </div>
+            <div
+              class="qty"
+            >
+              100
+               qty
+            </div>
+            <div
+              class="price"
+            >
+              Rp 10.000,00
+            </div>
+            <div
+              class="control"
+            >
+              <button>
+                add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container"
+        >
+          <div
+            class="image"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Juice"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FL0cBsT8%2F11-juice-png-image.png&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="main"
+          >
+            <div
+              class="name"
+            >
+              Juice
+            </div>
+            <div
+              class="qty"
+            >
+              100
+               qty
+            </div>
+            <div
+              class="price"
+            >
+              Rp 15.000,00
+            </div>
+            <div
+              class="control"
+            >
+              <button>
+                add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container"
+        >
+          <div
+            class="image"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Strawberry"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FS7xj0L5%2F1-strawberry-png-images.png&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="main"
+          >
+            <div
+              class="name"
+            >
+              Strawberry
+            </div>
+            <div
+              class="qty"
+            >
+              100
+               qty
+            </div>
+            <div
+              class="price"
+            >
+              Rp 20.000,00
+            </div>
+            <div
+              class="control"
+            >
+              <button>
+                add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container"
+        >
+          <div
+            class="image"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Mango"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FPgr5xF0%2F7-2-mango-free-png-image.png&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="main"
+          >
+            <div
+              class="name"
+            >
+              Mango
+            </div>
+            <div
+              class="qty"
+            >
+              100
+               qty
+            </div>
+            <div
+              class="price"
+            >
+              Rp 15.000,00
+            </div>
+            <div
+              class="control"
+            >
+              <button>
+                add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container"
+        >
+          <div
+            class="image"
+          >
+            <span
+              style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+            >
+              <img
+                alt="Apple"
+                data-nimg="fill"
+                decoding="async"
+                sizes="100vw"
+                src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=3840&q=75"
+                srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2FcC0Jd9D%2F9-apple-png-image.png&w=3840&q=75 3840w"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+              />
+            </span>
+          </div>
+          <div
+            class="main"
+          >
+            <div
+              class="name"
+            >
+              Apple
+            </div>
+            <div
+              class="qty"
+            >
+              100
+               qty
+            </div>
+            <div
+              class="price"
+            >
+              Rp 10.000,00
+            </div>
+            <div
+              class="control"
+            >
+              <button>
+                add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="footer"
+      >
+        Total: 
+        0
+      </footer>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`snapshot render item correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="container"
+      >
+        <div
+          class="image"
+        >
+          <span
+            style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+          >
+            <img
+              alt="Orange"
+              data-nimg="fill"
+              decoding="async"
+              sizes="100vw"
+              src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=3840&q=75"
+              srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=3840&q=75 3840w"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+            />
+          </span>
+        </div>
+        <div
+          class="main"
+        >
+          <div
+            class="name"
+          >
+            orange
+          </div>
+          <div
+            class="qty"
+          >
+            100
+             qty
+          </div>
+          <div
+            class="price"
+          >
+            Rp 10.000,00
+          </div>
+          <div
+            class="control"
+          >
+            <button>
+              add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container"
+    >
+      <div
+        class="image"
+      >
+        <span
+          style="box-sizing: border-box; display: block; overflow: hidden; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"
+        >
+          <img
+            alt="Orange"
+            data-nimg="fill"
+            decoding="async"
+            sizes="100vw"
+            src="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=3840&q=75"
+            srcset="/_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=640&q=75 640w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=750&q=75 750w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=828&q=75 828w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1080&q=75 1080w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1200&q=75 1200w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=1920&q=75 1920w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=2048&q=75 2048w, /_next/image?url=https%3A%2F%2Fi.ibb.co%2F9vrDnYJ%2F19-orange-png-image-download.png&w=3840&q=75 3840w"
+            style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;"
+          />
+        </span>
+      </div>
+      <div
+        class="main"
+      >
+        <div
+          class="name"
+        >
+          orange
+        </div>
+        <div
+          class="qty"
+        >
+          100
+           qty
+        </div>
+        <div
+          class="price"
+        >
+          Rp 10.000,00
+        </div>
+        <div
+          class="control"
+        >
+          <button>
+            add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

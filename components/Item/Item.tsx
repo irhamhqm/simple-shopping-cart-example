@@ -5,20 +5,18 @@ import styles from './Item.module.css';
 import { item } from "../../types"
 import { ChangeEvent, ChangeEventHandler, SyntheticEvent, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem, decreaseItem, selectCart, setItemQty } from "../../redux/main";
-import { formatToIDR } from "utils";
+import { addItem, decreaseItem, selectCart, setItemQty } from "../../redux/cart";
+import { formatToIDR } from "../../utils";
 
 type ItemProps = {
   data: item,
-  qty?: number
 }
 
-
-export default function Item({ data, qty: qtyProps }: ItemProps) {
+export default function Item({ data }: ItemProps) {
   const dispatch = useDispatch();
   const cart = useSelector(selectCart);
   const { uid, availableQuantity } = data;
-  const qty = cart[uid]?.qty || qtyProps || 0;
+  const qty = cart[uid]?.qty
 
   const [showControl, setShowControl] = useState(false);
 
@@ -61,9 +59,9 @@ export default function Item({ data, qty: qtyProps }: ItemProps) {
         <div className={styles.price}>{formatToIDR(data.price)}</div>
         <div className={styles.control}>
           {showControl && <>
-            <button className={styles.btnReduce} onClick={handleDecBtn}>-</button>
-            <input className={styles.inputQty} value={qty|| 0} onChange={handleSet} />
-            <button className={styles.btnAdd} onClick={handleAddBtn}>+</button>
+            <button className={styles.btnReduce} onClick={handleDecBtn} data-testid="dec-btn">-</button>
+            <input className={styles.inputQty} value={qty|| 0} onChange={handleSet} data-testid="input-el"/>
+            <button className={styles.btnAdd} onClick={handleAddBtn} data-testid="add-btn">+</button>
           </>}
           {!showControl && (
             <button onClick={handleAddBtn}>add to cart</button>

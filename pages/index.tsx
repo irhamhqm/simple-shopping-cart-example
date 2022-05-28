@@ -6,8 +6,8 @@ import { item } from '../types';
 import { GetStaticProps, NextPage } from 'next';
 import Item from '../components/Item';
 import { useSelector } from 'react-redux';
-import { selectCart } from '../redux/main';
-import { formatToIDR } from 'utils';
+import { selectCart } from '../redux/cart';
+import { formatToIDR } from '../utils';
 
 type indexProps = {
   items: Array<item>,
