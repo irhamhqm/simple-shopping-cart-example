@@ -3,6 +3,9 @@ import type { RootState } from './store'
 
 interface CartState {
   [uid: string]: {
+    productName: string,
+    img: string,
+    price: number,
     qty: number
   }
 }
@@ -13,11 +16,11 @@ export const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
-    addItem: (state: CartState, action: PayloadAction<{ uid: string }>) => {
-      const { uid } = action.payload;
+    addItem: (state: CartState, action: PayloadAction<{ uid: string, productName: string, img: string, price: number }>) => {
+      const { uid, productName, img, price } = action.payload;
       
       if (!state[uid]) {
-        state[uid] = { qty: 1 }
+        state[uid] = { productName, img, price, qty: 1 }
       } else {
         state[uid].qty = state[uid].qty + 1;
       }

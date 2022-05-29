@@ -18,13 +18,12 @@ export default function Home({ items }: indexProps) {
   const cart = useSelector(selectCart);
 
   const calcTotal = () => {
-    const cartArr = Object.keys(cart);
+    const cartArr = Object.values(cart);
+    
     if (cartArr.length <= 0) return 0;
-    const total = items.reduce((prev, currVal) => {
-      if (cartArr.find((val) => val === currVal.uid)) {
-        return prev + cart[currVal.uid].qty * currVal.price;
-      }
-      return prev
+    const total = cartArr.reduce((prev, currVal) => {
+        return prev + currVal.qty * currVal.price;
+      
     }, 0);
     return total;
   }

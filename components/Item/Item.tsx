@@ -15,7 +15,7 @@ type ItemProps = {
 export default function Item({ data }: ItemProps) {
   const dispatch = useDispatch();
   const cart = useSelector(selectCart);
-  const { uid, availableQuantity } = data;
+  const { uid, productName, price, image: { url }, availableQuantity } = data;
   const qty = cart[uid]?.qty
 
   const [showControl, setShowControl] = useState(false);
@@ -23,7 +23,7 @@ export default function Item({ data }: ItemProps) {
   const handleAddBtn = () => {
     setShowControl(true)
     if ((qty || 0 ) < availableQuantity) {
-      dispatch(addItem({ uid }));
+      dispatch(addItem({ uid, productName, price, img: url }));
     }
   }
 
@@ -51,12 +51,12 @@ export default function Item({ data }: ItemProps) {
   return (
     <div className={styles.container} data-testid={`item-${uid}`}>
       <div className={styles.image}>
-        <Image src={data.image.url} layout="fill" alt={data.image.altText} objectFit="cover" priority />
+        <Image src={url} layout="fill" alt={data.image.altText} objectFit="cover" priority />
       </div>
       <div className={styles.main}>
-        <div className={styles.name}>{data.productName}</div>
-        <div className={styles.qty}>{data.availableQuantity} qty</div>
-        <div className={styles.price}>{formatToIDR(data.price)}</div>
+        <div className={styles.name}>{productName}</div>
+        <div className={styles.qty}>{availableQuantity} qty</div>
+        <div className={styles.price}>{formatToIDR(price)}</div>
         <div className={styles.control}>
           {showControl && <>
             <button className={styles.btnReduce} onClick={handleDecBtn} data-testid="dec-btn">-</button>
