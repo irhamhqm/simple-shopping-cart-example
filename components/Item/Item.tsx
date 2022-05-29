@@ -49,7 +49,7 @@ export default function Item({ data }: ItemProps) {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-testid={`item-${uid}`}>
       <div className={styles.image}>
         <Image src={data.image.url} layout="fill" alt={data.image.altText} objectFit="cover" priority />
       </div>

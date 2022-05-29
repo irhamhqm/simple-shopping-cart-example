@@ -16,6 +16,7 @@ Object {
         >
           <div
             class="container"
+            data-testid="item-0001"
           >
             <div
               class="image"
@@ -64,6 +65,7 @@ Object {
           </div>
           <div
             class="container"
+            data-testid="item-0002"
           >
             <div
               class="image"
@@ -112,6 +114,7 @@ Object {
           </div>
           <div
             class="container"
+            data-testid="item-0003"
           >
             <div
               class="image"
@@ -160,6 +163,7 @@ Object {
           </div>
           <div
             class="container"
+            data-testid="item-0004"
           >
             <div
               class="image"
@@ -208,6 +212,7 @@ Object {
           </div>
           <div
             class="container"
+            data-testid="item-0005"
           >
             <div
               class="image"
@@ -255,12 +260,13 @@ Object {
             </div>
           </div>
         </div>
-        <footer
-          class="footer"
+        <div
+          class="total"
+          data-testid="total-info"
         >
           Total: 
           0
-        </footer>
+        </div>
       </div>
     </div>
   </body>,
@@ -276,6 +282,7 @@ Object {
       >
         <div
           class="container"
+          data-testid="item-0001"
         >
           <div
             class="image"
@@ -324,6 +331,7 @@ Object {
         </div>
         <div
           class="container"
+          data-testid="item-0002"
         >
           <div
             class="image"
@@ -372,6 +380,7 @@ Object {
         </div>
         <div
           class="container"
+          data-testid="item-0003"
         >
           <div
             class="image"
@@ -420,6 +429,7 @@ Object {
         </div>
         <div
           class="container"
+          data-testid="item-0004"
         >
           <div
             class="image"
@@ -468,6 +478,7 @@ Object {
         </div>
         <div
           class="container"
+          data-testid="item-0005"
         >
           <div
             class="image"
@@ -515,12 +526,13 @@ Object {
           </div>
         </div>
       </div>
-      <footer
-        class="footer"
+      <div
+        class="total"
+        data-testid="total-info"
       >
         Total: 
         0
-      </footer>
+      </div>
     </div>
   </div>,
   "debug": [Function],
@@ -584,6 +596,7 @@ Object {
     <div>
       <div
         class="container"
+        data-testid="item-0001"
       >
         <div
           class="image"
@@ -635,6 +648,7 @@ Object {
   "container": <div>
     <div
       class="container"
+      data-testid="item-0001"
     >
       <div
         class="image"

@@ -42,9 +42,9 @@ export default function Home({ items }: indexProps) {
         ))}
       </div>
      
-     <footer className={styles.footer}>
+     <div className={styles.total} data-testid="total-info">
        Total: {formatToIDR(calcTotal())}
-     </footer>
+     </div>
     </div>
   )
 }
