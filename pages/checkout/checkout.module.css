@@ -1,0 +1,57 @@
+.navbar {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  height: 3.5rem;
+  position: fixed;
+  padding: 1rem;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+
+.main {
+  padding-top: 4.3rem;
+  padding-bottom: 4rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.item {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  display: flex;
+  max-width: 720px;
+  margin-bottom: .5rem;
+  padding: .5rem;
+}
+
+.image {
+  position: relative;
+  width: 170px;
+  height: 110px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.total {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  height: 3.5rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 1rem;
+  width: 100%;
+  z-index: 99;
+  text-align: center;
+}

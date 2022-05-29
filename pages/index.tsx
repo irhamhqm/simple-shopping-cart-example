@@ -8,6 +8,7 @@ import Item from '../components/Item';
 import { useSelector } from 'react-redux';
 import { selectCart } from '../redux/cart';
 import { formatToIDR } from '../utils';
+import { useRouter } from 'next/router';
 
 type indexProps = {
   items: Array<item>,
@@ -15,6 +16,7 @@ type indexProps = {
 }
 
 export default function Home({ items }: indexProps) {
+  const router = useRouter();
   const cart = useSelector(selectCart);
 
   const calcTotal = () => {
@@ -31,7 +33,7 @@ export default function Home({ items }: indexProps) {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>WikiToko</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav className={styles.navbar}>Home</nav>
@@ -43,6 +45,7 @@ export default function Home({ items }: indexProps) {
      
      <div className={styles.total} data-testid="total-info">
        Total: {formatToIDR(calcTotal())}
+       <button onClick={() => { router.push('/checkout') }}>Checkout</button>
      </div>
     </div>
   )

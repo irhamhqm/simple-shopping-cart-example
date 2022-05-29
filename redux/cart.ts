@@ -3,6 +3,7 @@ import type { RootState } from './store'
 
 interface CartState {
   [uid: string]: {
+    uid: string,
     productName: string,
     img: string,
     price: number,
@@ -20,7 +21,7 @@ export const cartSlice = createSlice({
       const { uid, productName, img, price } = action.payload;
       
       if (!state[uid]) {
-        state[uid] = { productName, img, price, qty: 1 }
+        state[uid] = { uid, productName, img, price, qty: 1 }
       } else {
         state[uid].qty = state[uid].qty + 1;
       }
