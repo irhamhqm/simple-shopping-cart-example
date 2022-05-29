@@ -50,4 +50,24 @@ describe('Item component', () => {
     const inputEl = screen.queryByTestId('input-el') as HTMLInputElement;
     expect(inputEl).not.toBeInTheDocument();
   });
+  it('type on input element: input element change accordingly', () => {
+    render(<Item data={mockData} />, { preloadedState });
+    const addToCartBtn = screen.getByRole('button', { name: /add to cart/i });
+    
+    fireEvent.click(addToCartBtn);
+
+    const inputEl = screen.queryByTestId('input-el') as HTMLInputElement;
+    fireEvent.change(inputEl, { target: { value: '5' } });
+    expect(inputEl.value).toBe('5');
+  });
+  it('delete value of input element: input element value change to 0', () => {
+    render(<Item data={mockData} />, { preloadedState });
+    const addToCartBtn = screen.getByRole('button', { name: /add to cart/i });
+    
+    fireEvent.click(addToCartBtn);
+
+    const inputEl = screen.queryByTestId('input-el') as HTMLInputElement;
+    fireEvent.change(inputEl, { target: { value: '' } });
+    expect(inputEl.value).toBe('0');
+  });
 })
