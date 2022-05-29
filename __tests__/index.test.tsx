@@ -21,36 +21,6 @@ const mockItemList = [{
   },
   "price": 15000,
   "availableQuantity": 100
-},
-{
-  "uid": "0003",
-  "productName": "Strawberry",
-  "image": {
-    "url": "https://i.ibb.co/S7xj0L5/1-strawberry-png-images.png",
-    "altText": "Strawberry"
-  },
-  "price": 20000,
-  "availableQuantity": 100
-},
-{
-  "uid": "0004",
-  "productName": "Mango",
-  "image": {
-    "url": "https://i.ibb.co/Pgr5xF0/7-2-mango-free-png-image.png",
-    "altText": "Mango"
-  },
-  "price": 15000,
-  "availableQuantity": 100
-},
-{
-  "uid": "0005",
-  "productName": "Apple",
-  "image": {
-    "url": "https://i.ibb.co/cC0Jd9D/9-apple-png-image.png",
-    "altText": "Apple"
-  },
-  "price": 10000,
-  "availableQuantity": 100
 }];
 
 const preloadedState = {
@@ -76,7 +46,7 @@ describe('index page', () => {
     const itemEl2 = screen.getByTestId('item-0002');
     const itemArr = [ itemEl, itemEl2 ];
 
-    itemArr.forEach((item, index) => {  
+    itemArr.forEach((item) => {  
       const { getByRole: getElementByRole } = within(item);
 
       const addToCartBtn = getElementByRole('button', { name: /add to cart/i });
@@ -106,7 +76,7 @@ describe('index page', () => {
     const itemEl2 = screen.getByTestId('item-0002');
     const itemArr = [ itemEl, itemEl2 ];
 
-    itemArr.forEach((item, index) => {  
+    itemArr.forEach((item) => {  
       const { getByRole: getElementByRole } = within(item);
 
       const addToCartBtn = getElementByRole('button', { name: /add to cart/i });
@@ -117,5 +87,18 @@ describe('index page', () => {
     fireEvent.click(decBtn);
 
     expect(totalEl).toHaveTextContent(/15.000,00/i);
+  });
+  it('item input qty value changed: render correct amount', () => {
+    render(<Home items={mockItemList}/>, { preloadedState });
+    const totalEl = screen.getByTestId('total-info');
+    const itemEl = screen.getByTestId('item-0001');
+    const { getByRole: getElementByRole, getByTestId: getElementByTestId } = within(itemEl);
+
+    const addToCartBtn = getElementByRole('button', { name: /add to cart/i });
+    fireEvent.click(addToCartBtn);
+    const decBtn = getElementByTestId('input-el');
+    fireEvent.change(decBtn, { target: { value: '5' } });
+
+    expect(totalEl).toHaveTextContent(/50.000,00/i);
   });
 });
