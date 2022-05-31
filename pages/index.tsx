@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import styles from './index.module.css';
 import type { item } from '../types/index';
-import { GetStaticProps, NextPage } from 'next';
+import { GetStaticProps } from 'next';
 import Item from '../components/Item';
 import { useSelector } from 'react-redux';
 import { selectCart } from '../redux/cart';
