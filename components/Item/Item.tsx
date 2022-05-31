@@ -2,7 +2,7 @@ import Image from "next/image"
 
 import styles from './Item.module.css';
 
-import { item } from "../../types"
+import type { item } from "../../types/index"
 import { ChangeEvent, ChangeEventHandler, SyntheticEvent, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem, decreaseItem, selectCart, setItemQty } from "../../redux/cart";

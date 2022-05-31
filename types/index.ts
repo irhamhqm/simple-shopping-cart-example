@@ -13,3 +13,5 @@ interface item {
 export type {
   item
 };
+
+export {}

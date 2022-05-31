@@ -15,12 +15,8 @@
 .main {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr 1fr 1fr; 
+  /* grid-template-rows: 1fr 1fr 1fr;  */
   gap: 16px 0px; 
-  grid-template-areas: 
-    "."
-    "."
-    ".";
   justify-content: center;
   padding-top: 4.3rem;
   padding-bottom: 4rem;

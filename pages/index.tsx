@@ -2,7 +2,7 @@ import Head from 'next/head'
 import axios from 'axios';
 
 import styles from './index.module.css';
-import { item } from '../types';
+import type { item } from '../types/index';
 import { GetStaticProps, NextPage } from 'next';
 import Item from '../components/Item';
 import { useSelector } from 'react-redux';
