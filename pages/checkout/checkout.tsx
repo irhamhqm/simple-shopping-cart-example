@@ -26,19 +26,22 @@ export default function Checkout() {
       </Head>
       <nav className={styles.navbar}>Checkout</nav>
       <div className={styles.main}>
-        {cartArr.map((item) => (
-          <div className={styles.item} key={item.uid}>
-            <div className={styles.image}>
-              <Image src={item.img} alt={item.productName} layout="fill" objectFit="cover" />
+        {cartArr.map((item) => {
+          if (item.qty <= 0) return null;
+          return (
+            <div className={styles.item} key={item.uid} data-testid={`item-${item.uid}`}>
+              <div className={styles.image}>
+                <Image src={item.img} alt={item.productName} layout="fill" objectFit="cover" />
+              </div>
+              <div className={styles.desc}>
+                <div>{item.productName}</div>
+                <div>in cart: {item.qty}</div>
+                <div>{formatToIDR(item.price)}</div>
+                <div>{formatToIDR(item.price * item.qty)}</div>
+              </div>
             </div>
-            <div className={styles.desc}>
-              <div>{item.productName}</div>
-              <div>in cart: {item.qty}</div>
-              <div>{formatToIDR(item.price)}</div>
-              <div>{formatToIDR(item.price * item.qty)}</div>
-            </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
       <div className={styles.total} data-testid="">
        Total: {formatToIDR(calcTotal())}

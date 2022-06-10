@@ -16,9 +16,9 @@ export default function Item({ data }: ItemProps) {
   const dispatch = useDispatch();
   const cart = useSelector(selectCart);
   const { uid, productName, price, image: { url }, availableQuantity } = data;
-  const qty = cart[uid]?.qty
+  const qty = cart[uid]?.qty;
 
-  const [showControl, setShowControl] = useState(false);
+  const [showControl, setShowControl] = useState(!!qty);
 
   const handleAddBtn = () => {
     setShowControl(true)
@@ -58,7 +58,8 @@ export default function Item({ data }: ItemProps) {
         <div className={styles.qty}>{availableQuantity} qty</div>
         <div className={styles.price}>{formatToIDR(price)}</div>
         <div className={styles.control}>
-          {showControl && <>
+          {showControl && 
+          <>
             <button className={styles.btnReduce} onClick={handleDecBtn} data-testid="dec-btn">-</button>
             <input className={styles.inputQty} value={qty|| 0} onChange={handleSet} data-testid="input-el"/>
             <button className={styles.btnAdd} onClick={handleAddBtn} data-testid="add-btn">+</button>
