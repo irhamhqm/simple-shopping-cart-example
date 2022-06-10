@@ -43,7 +43,7 @@ export default function Checkout() {
           )
         })}
       </div>
-      <div className={styles.total} data-testid="">
+      <div className={styles.total} data-testid="total">
        Total: {formatToIDR(calcTotal())}
        {/* <button onClick={() => { router.push('/checkout') }}>Checkout</button> */}
      </div>

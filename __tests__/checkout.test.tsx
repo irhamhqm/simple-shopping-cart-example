@@ -34,4 +34,9 @@ describe('Checkout Page', () => {
     expect(item).not.toBeInTheDocument();
 
   });
+  it('show correct total amount = 70000', () => {
+    render(<Checkout />, { preloadedState });
+    const total = screen.getByTestId('total');
+    expect(total).toHaveTextContent(/70.000,00/i);
+  })
 });
