@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useSelector } from "react-redux";
-import { selectCart } from "redux/cart";
-import { formatToIDR } from "utils";
+import { selectCart } from "../../redux/cart";
+import { formatToIDR } from "../../utils";
 
 import styles from './checkout.module.css';
 

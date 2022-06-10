@@ -1,8 +1,6 @@
 
 import Item from '../components/Item';
-import { Provider } from 'react-redux';
 import { screen, render, fireEvent } from '../utils/test-utils';
-import store from '../redux/store';
 
 const mockData = {
   "uid": "0001",
