@@ -262,10 +262,15 @@ Object {
         </div>
         <div
           class="total"
-          data-testid="total-info"
+          data-testid="total"
         >
           Total: 
           0
+          <button
+            disabled=""
+          >
+            Checkout
+          </button>
         </div>
       </div>
     </div>
@@ -528,10 +533,15 @@ Object {
       </div>
       <div
         class="total"
-        data-testid="total-info"
+        data-testid="total"
       >
         Total: 
         0
+        <button
+          disabled=""
+        >
+          Checkout
+        </button>
       </div>
     </div>
   </div>,

@@ -12,7 +12,6 @@ import { useRouter } from 'next/router';
 
 type indexProps = {
   items: Array<item>,
-  // items: string
 }
 
 export default function Home({ items }: indexProps) {
@@ -43,9 +42,9 @@ export default function Home({ items }: indexProps) {
         ))}
       </div>
      
-     <div className={styles.total} data-testid="total-info">
+     <div className={styles.total} data-testid="total">
        Total: {formatToIDR(calcTotal())}
-       <button onClick={() => { router.push('/checkout') }}>Checkout</button>
+       <button onClick={() => { router.push('/checkout') }} disabled={!calcTotal()}>Checkout</button>
      </div>
     </div>
   )

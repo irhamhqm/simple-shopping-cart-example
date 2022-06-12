@@ -30,7 +30,7 @@ const preloadedState = {
 describe('index page', () => {
   it('item add to cart button clicked: render correct amount', () => {
     render(<Home items={mockItemList}/>, { preloadedState });
-    const totalEl = screen.getByTestId('total-info');
+    const totalEl = screen.getByTestId('total');
     const itemEl = screen.getByTestId('item-0001');
     const { getByRole: getElementByRole } = within(itemEl);
 
@@ -41,7 +41,7 @@ describe('index page', () => {
   });
   it('2 different items\' add to cart button clicked: render correct amount', () => {
     render(<Home items={mockItemList}/>, { preloadedState });
-    const totalEl = screen.getByTestId('total-info');
+    const totalEl = screen.getByTestId('total');
     const itemEl = screen.getByTestId('item-0001');
     const itemEl2 = screen.getByTestId('item-0002');
     const itemArr = [ itemEl, itemEl2 ];
@@ -57,7 +57,7 @@ describe('index page', () => {
   });
   it('reduce qty button clicked: render correct amount', () => {
     render(<Home items={mockItemList}/>, { preloadedState });
-    const totalEl = screen.getByTestId('total-info');
+    const totalEl = screen.getByTestId('total');
     const itemEl = screen.getByTestId('item-0001');
     const { getByRole: getElementByRole, getByTestId: getElementByTestId } = within(itemEl);
 
@@ -71,7 +71,7 @@ describe('index page', () => {
   });
   it('2 different items\' add to cart button clicked and then reduce qty btn clicked: render correct amount', () => {
     render(<Home items={mockItemList}/>, { preloadedState });
-    const totalEl = screen.getByTestId('total-info');
+    const totalEl = screen.getByTestId('total');
     const itemEl = screen.getByTestId('item-0001');
     const itemEl2 = screen.getByTestId('item-0002');
     const itemArr = [ itemEl, itemEl2 ];
@@ -90,7 +90,7 @@ describe('index page', () => {
   });
   it('item input qty value changed: render correct amount', () => {
     render(<Home items={mockItemList}/>, { preloadedState });
-    const totalEl = screen.getByTestId('total-info');
+    const totalEl = screen.getByTestId('total');
     const itemEl = screen.getByTestId('item-0001');
     const { getByRole: getElementByRole, getByTestId: getElementByTestId } = within(itemEl);
 

@@ -65,7 +65,7 @@ export default function Item({ data }: ItemProps) {
             <button className={styles.btnAdd} onClick={handleAddBtn} data-testid="add-btn">+</button>
           </>}
           {!showControl && (
-            <button onClick={handleAddBtn}>add to cart</button>
+            <button onClick={handleAddBtn} className={styles.button}>Add to cart</button>
           )}
         </div>
       </div>

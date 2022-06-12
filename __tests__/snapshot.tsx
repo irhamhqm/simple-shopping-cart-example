@@ -1,15 +1,9 @@
-import { render } from "@testing-library/react";
+import { render } from "../utils/test-utils";
 import Home from "../pages";
 
 import store from '../redux/store';
 import { Provider } from 'react-redux';
 import Item from "../components/Item";
-
-const MockComponent = (props: { children: React.ReactNode }) => (
-  <Provider store={store}>
-    {props.children}
-  </Provider>
-);
 
 const mockItem = {
   "uid": "0001",
@@ -73,15 +67,19 @@ const mockItemList = [{
   "availableQuantity": 100
 }];
 
+const preloadedState = {
+  cart: {}
+}
+
 describe('snapshot', () => {
   it('render home correctly', () => {
-    const homeElement = render(<MockComponent><Home items={mockItemList}/></MockComponent>);
+    const homeElement = render(<Home items={mockItemList}/>, { preloadedState });
 
     expect(homeElement).toMatchSnapshot();
   });
 
   it('render item correctly', () => {
-    const itemEl = render(<MockComponent><Item data={mockItem} ></Item></MockComponent>);
+    const itemEl = render(<Item data={mockItem} ></Item>, { preloadedState });
 
     expect(itemEl).toMatchSnapshot();
   });

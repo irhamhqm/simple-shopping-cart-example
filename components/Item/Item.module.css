@@ -3,7 +3,8 @@
   -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
   -moz-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
   padding: .5rem;
-  max-width: 140px;
+  width: 8rem;
+  /* max-width: 140px; */
   height: 250px;
   margin-bottom: 1rem;
   /* grid-area: 1 / 1 / 4 / 3; */
@@ -24,12 +25,41 @@
   line-height: 1.4rem;
 }
 
-.name {}
+.name {
+  font-size: 1.125rem;
+}
 
-.qty {}
+.qty {
+  font-size: 0.8rem;
+}
 
-.price {}
+.price {
+  /* font-size: 1.25rem; */
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
 
 .inputQty {
+  border: none;
+  border-bottom: 1px solid #1e1e1e;
+  text-align: center;
   width: 43px;
+}
+
+.button {
+  background-color: #18DE61;
+  color: white;
+  font-size: 1rem;
+  border: 0;
+  border-radius: .25rem;
+  padding: .2rem .8rem;
+  height: 2rem;
+}
+
+.btnReduce, .btnAdd {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  width: 2rem;
+  height: 2rem;
 }
