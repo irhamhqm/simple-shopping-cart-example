@@ -55,8 +55,8 @@ export default function Item({ data }: ItemProps) {
       </div>
       <div className={styles.main}>
         <div className={styles.name}>{productName}</div>
-        <div className={styles.qty}>{availableQuantity} qty</div>
         <div className={styles.price}>{formatToIDR(price)}</div>
+        <div className={styles.qty}>{availableQuantity} qty</div>
         <div className={styles.control}>
           {showControl && 
           <>

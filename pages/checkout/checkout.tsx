@@ -1,30 +1,25 @@
+
 import Head from "next/head";
 import Image from "next/image";
 import { useSelector } from "react-redux";
 import { selectCart } from "../../redux/cart";
 import { formatToIDR } from "../../utils";
 
+import Navbar from "../../components/Navbar";
+import Total from '../../components/Total';
+
 import styles from './checkout.module.css';
 
 export default function Checkout() {
   const cart = useSelector(selectCart);
   const cartArr = Object.values(cart);
-  const calcTotal = () => {
-    const cartArr = Object.values(cart);
-    
-    if (cartArr.length <= 0) return 0;
-    const total = cartArr.reduce((prev, currVal) => {
-        return prev + currVal.qty * currVal.price;
-      
-    }, 0);
-    return total;
-  }
+
   return (
     <div>
       <Head>
         <title>Checkout - WikiToko</title>
       </Head>
-      <nav className={styles.navbar}>Checkout</nav>
+      <Navbar text="Checkout" />
       <div className={styles.main}>
         {cartArr.map((item) => {
           if (item.qty <= 0) return null;
@@ -43,9 +38,7 @@ export default function Checkout() {
           )
         })}
       </div>
-      <div className={styles.total} data-testid="total">
-       Total: {formatToIDR(calcTotal())}
-     </div>
+      <Total />
     </div>
   )
 }

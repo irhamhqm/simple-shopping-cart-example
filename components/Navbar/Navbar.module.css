@@ -1,0 +1,21 @@
+.navbar {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px 0px;
+  height: 3.5rem;
+  position: fixed;
+  padding: 1rem;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+  left: 0;
+}
+
+.navContent {
+  color: #18DE61;
+  font-size: 1.25rem;
+  font-weight: 500;
+  max-width: 720px;
+  margin: 0 auto;
+}

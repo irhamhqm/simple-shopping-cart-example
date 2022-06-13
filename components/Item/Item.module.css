@@ -18,6 +18,7 @@
 }
 
 .main {
+  color: #1e1e1e;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,14 +30,14 @@
   font-size: 1.125rem;
 }
 
-.qty {
-  font-size: 0.8rem;
-}
-
 .price {
   /* font-size: 1.25rem; */
   font-weight: 500;
-  margin-bottom: 1rem;
+}
+
+.qty {
+  font-size: 0.8rem;
+  margin-bottom: 0.7rem;
 }
 
 .inputQty {

@@ -5,10 +5,9 @@ import styles from './index.module.css';
 import type { item } from '../types/index';
 import { GetStaticProps } from 'next';
 import Item from '../components/Item';
-import { useSelector } from 'react-redux';
-import { selectCart } from '../redux/cart';
-import { formatToIDR } from '../utils';
 import { useRouter } from 'next/router';
+import Navbar from '../components/Navbar';
+import Total from '@/components/Total/Total';
 
 type indexProps = {
   items: Array<item>,
@@ -16,18 +15,6 @@ type indexProps = {
 
 export default function Home({ items }: indexProps) {
   const router = useRouter();
-  const cart = useSelector(selectCart);
-
-  const calcTotal = () => {
-    const cartArr = Object.values(cart);
-    
-    if (cartArr.length <= 0) return 0;
-    const total = cartArr.reduce((prev, currVal) => {
-        return prev + currVal.qty * currVal.price;
-      
-    }, 0);
-    return total;
-  }
 
   return (
     <div>
@@ -35,17 +22,13 @@ export default function Home({ items }: indexProps) {
         <title>WikiToko</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className={styles.navbar}>Home</nav>
+      <Navbar text="WikiToko"/>
       <div className={styles.main}>
         {items.map((data) => (
           <Item key={data.uid} data={data} />
         ))}
       </div>
-     
-     <div className={styles.total} data-testid="total">
-       Total: {formatToIDR(calcTotal())}
-       <button onClick={() => { router.push('/checkout') }} disabled={!calcTotal()}>Checkout</button>
-     </div>
+      <Total showButton />
     </div>
   )
 }
